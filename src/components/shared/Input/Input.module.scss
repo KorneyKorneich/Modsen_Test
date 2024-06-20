@@ -1,0 +1,20 @@
+.input {
+  all: unset;
+  width: 94%;
+  padding: 10px;
+  font-size: 16px;
+  border-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: var(--TEXT);
+  background-color: var(--background-dark); /* Цвет фона для темной темы */
+  color: var(--TEXT); /* Цвет текста для темной темы */
+  //
+  //&:focus {
+  //  outline: none;
+  //  box-shadow: 0 0 5px var(--primary-color); /* Эффект тени при фокусе */
+  //}
+  //
+  //&::placeholder {
+  //  color: var(--text-color-dark); /* Цвет плейсхолдера для темной темы */
+  //}
+}

@@ -1,0 +1,21 @@
+@import "./styles/lightTheme.scss";
+
+:root{
+    font-family: DM Sans, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+        --ACCENT_COLOR: #A18A68;
+        --BG_COLOR: #FFF;
+        --TITLE: #000000;
+        --TEXT: #707070;
+
+};
+
+body{
+    margin: 20px;
+}
+
+
+
+
