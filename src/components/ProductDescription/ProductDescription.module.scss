@@ -1,0 +1,213 @@
+
+@mixin media-laptop {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin media-tablet {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+.DataWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+
+  @include media-laptop {
+    width: 40%;
+    padding-left: 20px;
+  }
+
+  @include media-tablet {
+    width: 100%;
+  }
+
+  > * {
+    margin: 0;
+    user-select: none;
+  }
+}
+
+.Name {
+  color: var(--main_colours-black);
+  font-family: var(--font-primary);
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+
+  @include media-laptop {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  @include media-tablet {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+}
+
+.Price {
+  color: var(--main_colours-accent);
+  font-family: var(--font-primary);
+
+  @include media-laptop {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  @include media-tablet {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+
+  padding: 20px 0 50px 0;
+}
+
+.RatingWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+
+  &.open {
+    @include media-tablet {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+  }
+}
+
+.StarPath {
+  fill: var(--main_colours-black);
+}
+
+.ReviewsData {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 20px;
+
+  @include media-tablet {
+    display: none;
+  }
+}
+
+.RatingNumber {
+  padding: 0 10px 0 5px;
+  margin: 0;
+  color: var(--main_colours-accent);
+  font-family: var(--font-primary);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.ReviewsText {
+  color: var(--neutral_colours-grey);
+  font-family: var(--font-primary);
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.Path {
+  fill: var(--neutral_colours-grey);
+
+  :hover {
+    fill: var(--main_colours-black);
+  }
+}
+
+.ViewMoreButton {
+  all: unset;
+
+  @include media-laptop {
+    display: none;
+  }
+
+  > * {
+    font-family: var(--font-primary);
+    font-size: 1rem;
+    font-weight: normal;
+  }
+}
+
+.ViewMoreButtonSpan {
+  color: var(--main_colours-black);
+}
+
+.ViewMoreButtonText {
+  color: var(--main_colours-accent);
+}
+
+.SocialNetworksIconsWrapper {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+
+  > * {
+    padding-right: 20px;
+    cursor: pointer;
+  }
+}
+
+.CategoriesText {
+  margin-top: 50px;
+  color: var(--main_colours-black);
+  font-family: var(--font-primary);
+  user-select: none;
+
+  @include media-laptop {
+    font-size: 1rem;
+    font-weight: normal;
+  }
+
+  @include media-tablet {
+    font-size: 0.875rem;
+    font-weight: normal;
+  }
+}
+
+.CategoriesSpan {
+  color: var(--neutral_colours-grey);
+  padding-left: 15px;
+}
+
+.AddToCartButton {
+  user-select: none;
+  cursor: pointer;
+  font-family: var(--font-primary);
+  color: var(--main_colours-black);
+  background: var(--main_colours-white);
+  width: 100px;
+  height: 40px;
+  border: none;
+  border: 1px solid var(--main_colours-black);
+  border-radius: 5px;
+  margin-bottom: 50px;
+
+  @include media-laptop {
+    font-size: 1rem;
+    font-weight: normal;
+
+    :hover {
+      color: var(--main_colours-white);
+      border: 1px solid var(--main_colours-black);
+      background: var(--main_colours-black);
+    }
+  }
+
+  @include media-tablet {
+    font-size: 0.875rem;
+    font-weight: normal;
+  }
+
+  :active {
+    color: var(--main_colours-white);
+    border: 1px solid var(--main_colours-black);
+    background: var(--main_colours-black);
+  }
+}

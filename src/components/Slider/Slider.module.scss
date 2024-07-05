@@ -1,16 +1,19 @@
 .image_slider {
+  display: flex;
+  align-items: center;
   position: relative;
   width: 100%;
-  height: 80vh;
+  height: 70vh;
   margin: 20px auto 0;
   overflow: hidden;
   border-radius: 20px;
 }
 
 .slide {
-  width: 100%;
-  height: 100%;
+  width: 50%;
+  height: 50%;
   display: block;
+  margin: 0 auto;
 }
 
 .arrow {
@@ -26,13 +29,22 @@
 }
 
 .arrow:hover {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(0,0,0,0.1);
 }
 
 .left {
   left: 10px;
+  height: 100%;
+  width: 5%;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+
 }
 
 .right {
   right: 10px;
+  height: 100%;
+  width: 5%;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
 }

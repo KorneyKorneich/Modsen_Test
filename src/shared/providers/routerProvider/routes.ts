@@ -1,0 +1,5 @@
+export const NOT_FOUND = "*"
+export const HOME = "/"
+export const SHOP = "/Shop"
+export const CART = "/Cart"
+export const PRODUCT = "/Product"

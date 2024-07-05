@@ -1,0 +1,46 @@
+.ErrorPageWrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--main_colours-white);
+}
+
+.Container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.MainText {
+  font-family: var(--font-primary);
+  color: black;
+  user-select: none;
+}
+
+.MessageText {
+  font-family: var(--font-primary);
+  color: darkgrey;
+  text-align: center;
+  user-select: none;
+}
+
+.RedirectButton {
+  all: unset;
+  margin-top: 30px;
+  cursor: pointer;
+  user-select: none;
+  text-align: center;
+  font-family: var(--font-primary);
+  color: var(--main_colours-black);
+  border: 1px solid black;
+  border-radius: 7.5px;
+}
+
+.RedirectButton:hover {
+  background-color: var(--main_colours-black);
+  color: var(--main_colours-white);
+}

@@ -1,0 +1,27 @@
+.Bar {
+  width: 100vw;
+  height: 92vh;
+  background: var(--main_colours-white);
+  position: fixed;
+  margin-top: 8vh;
+  right: -3000px;
+  transition: right 0.3s ease;
+
+  &.isOpened {
+    right: 0;
+  }
+}
+
+.ButtonsWrapper {
+  width: 100%;
+  padding: 0;
+}
+
+.Button {
+  list-style: none;
+  padding: 30px 0 0 7%;
+  font-size: var(--mobile-heading-1-size);
+  font-weight: var(--mobile-heading-3-weight);
+  font-family: var(--font-primary);
+  cursor: pointer;
+}

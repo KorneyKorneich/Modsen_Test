@@ -1,15 +1,87 @@
-@import "./styles/lightTheme.scss";
+@import "src/styles/theme";
 
 :root{
     font-family: DM Sans, sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-        --ACCENT_COLOR: #A18A68;
-        --BG_COLOR: #FFF;
-        --TITLE: #000000;
-        --TEXT: #707070;
 
+    --font-primary: "DM Sans", sans-serif;
+    --font-logo: "Allerta Stencil", sans-serif;
+
+    --pc-logo-weight: 400;
+    --pc-logo-size: 35px;
+
+    --pc-heading-1-weight: 500;
+    --pc-heading-1-size: 33px;
+    --pc-heading-1-line-height: 0px;
+    --pc-heading-1-paragraph-spacing: 0px;
+
+    --pc-heading-2-weight: 400;
+    --pc-heading-2-size: 26px;
+    --pc-heading-2-line-height: 35px;
+    --pc-heading-2-paragraph-spacing: 0px;
+
+    --pc-heading-3-weight: 400;
+    --pc-heading-3-size: 20px;
+    --pc-heading-3-line-height: 26px;
+    --pc-heading-3-paragraph-spacing: 0px;
+
+    --pc-heading-4-weight: 500;
+    --pc-heading-4-size: 20px;
+    --pc-heading-4-line-height: 20px;
+    --pc-heading-4-paragraph-spacing: 0px;
+
+    --pc-heading-5-weight: 400;
+    --pc-heading-5-size: 16px;
+    --pc-heading-5-line-height: 27px;
+    --pc-heading-5-paragraph-spacing: 10px;
+
+    --pc-body-large-weight: 700;
+    --pc-body-large-size: 16px;
+    --pc-body-large-line-height: 0px;
+    --pc-body-large-paragraph-spacing: 0px;
+
+    --pc-body-medium-weight: 400;
+    --pc-body-medium-size: 14px;
+    --pc-body-medium-line-height: 0px;
+    --pc-body-medium-paragraph-spacing: 0px;
+
+    --pc-body-small-weight: 400;
+    --pc-body-small-size: 12px;
+    --pc-body-small-line-height: 20px;
+    --pc-body-small-paragraph-spacing: 10px;
+
+    --mobile-logo-weight: 400;
+    --mobile-logo-size: 25px;
+
+    --mobile-heading-1-weight: 400;
+    --mobile-heading-1-size: 20px;
+    --mobile-heading-1-line-height: 26px;
+    --mobile-heading-1-paragraph-spacing: 0px;
+
+    --mobile-heading-2-weight: 400;
+    --mobile-heading-2-size: 16px;
+    --mobile-heading-2-line-height: 27px;
+    --mobile-heading-2-paragraph-spacing: 10px;
+
+    --mobile-heading-3-weight: 400;
+    --mobile-heading-3-size: 14px;
+    --mobile-heading-3-line-height: 0px;
+    --mobile-heading-3-paragraph-spacing: 0px;
+
+    --mobile-body-small-weight: 400;
+    --mobile-body-small-size: 12px;
+    --mobile-body-small-line-height: 20px;
+    --mobile-body-small-paragraph-spacing: 10px;
+
+    --size-mobileS: 320px;
+    --size-mobileM: 375px;
+    --size-mobileL: 425px;
+    --size-tablet: 768px;
+    --size-laptop: 1024px;
+    --size-laptopL: 1440px;
+    --size-desktop: 2560px;
 };
 
 body{

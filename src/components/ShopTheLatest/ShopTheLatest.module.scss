@@ -1,0 +1,68 @@
+.ShopTheLatestWrapper {
+  width: 86%;
+  height: fit-content;
+  margin: 0;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--main_colours-white);
+
+  &.isOpened {
+    display: none;
+  }
+}
+
+.HeadButtons {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.HeadLink {
+  font-family: var(--font-primary);
+  color: var(--main_colours-black);
+  user-select: none;
+
+  @media (min-width: var(--size-laptop)) {
+    font-size: var(--pc-heading-1-size);
+    font-weight: var(--pc-heading-1-weight);
+  }
+
+  @media (max-width: var(--size-tablet)) {
+    font-size: var(--mobile-heading-2-size);
+    font-weight: var(--mobile-heading-2-weight);
+  }
+}
+
+.ViewAllLink {
+  font-family: var(--font-primary);
+  color: var(--main_colours-accent);
+  user-select: none;
+  cursor: pointer;
+
+  @media (min-width: var(--size-laptop)) {
+    font-size: var(--pc-heading-3-size);
+    font-weight: var(--pc-heading-3-line-height);
+  }
+
+  @media (max-width: var(--size-tablet)) {
+    font-size: var(--mobile-heading-3-size);
+    font-weight: var(--mobile-heading-3-weight);
+  }
+
+  &:hover {
+    color: var(--main_colours-black);
+  }
+}
+
+.CardsContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}

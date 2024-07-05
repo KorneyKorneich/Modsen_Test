@@ -1,0 +1,213 @@
+
+.allElementsWrapper {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--immutable_colors-white); // Adjust this according to your theme
+  margin-top: 20px;
+}
+
+.buttonsWrapper {
+  display: flex;
+  width: 86%;
+  border-top: 1px solid var(--color-grey);
+  padding-top: 20px;
+  justify-content: space-between;
+
+  @media (min-width: var(--size-laptop)) {
+    flex-direction: row-reverse;
+  }
+  @media (max-width: var(--size-tablet)) {
+    flex-direction: column;
+  }
+}
+
+.emailInputWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  @media (min-width: var(--size-laptop)) {
+    width: 50%;
+  }
+  @media (max-width: var(--size-tablet)) {
+    width: 100%;
+  }
+}
+
+.emailInput {
+  cursor: pointer;
+  height: 30px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--color-black);
+  background-color: var(--color-white);
+  color: var(--color-dark-grey);
+  font-family: var(--font-primary);
+
+  @media (min-width: var(--size-laptop)) {
+    width: 60%;
+    font-size: var(--pc-heading-5-size);
+    font-weight: var(--pc-heading-5-weight);
+  }
+  @media (max-width: var(--size-tablet)) {
+    width: 100%;
+    font-size: var(--mobile-body-small-size);
+    font-weight: var(--mobile-body-small-weight);
+  }
+}
+
+.emailButton {
+  border: none;
+  border-bottom: 1px solid var(--color-black);
+  background: transparent;
+  padding-bottom: 5px;
+}
+
+.emailWithArrowWrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.checkBoxWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 15px 0 25px;
+
+  @media (min-width: var(--size-laptop)) {
+    display: none;
+  }
+}
+
+.checkBox {}
+
+.checkBoxText {
+  font-family: var(--font-primary);
+  font-size: var(--mobile-body-small-size);
+  font-weight: var(--mobile-body-small-weight);
+  color: var(--color-black);
+}
+
+.buttons {
+  padding: 0;
+  display: flex;
+
+  @media (min-width: var(--size-laptop)) {
+    flex-direction: row;
+  }
+  @media (max-width: var(--size-tablet)) {
+    flex-direction: column;
+  }
+}
+
+.button {
+  list-style: none;
+  text-align: start;
+  font-family: var(--font-primary);
+  color: var(--color-dark-grey);
+  padding: 0 45px 20px 0;
+  user-select: none;
+  cursor: pointer;
+
+  @media (min-width: var(--size-laptop)) {
+    font-size: var(--pc-heading-5-size);
+    font-weight: var(--pc-heading-5-weight);
+  }
+  @media (max-width: var(--size-tablet)) {
+    font-size: var(--mobile-body-small-size);
+    font-weight: var(--mobile-body-small-weight);
+  }
+}
+
+.contactsWrapper {
+  display: flex;
+  width: 86%;
+  padding: 20px 0;
+  justify-content: space-between;
+
+  @media (min-width: var(--size-laptop)) {
+    flex-direction: row-reverse;
+  }
+  @media (max-width: var(--size-tablet)) {
+    flex-direction: column;
+  }
+}
+
+.iconsWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+  @media (max-width: var(--size-tablet)) {
+    padding-bottom: 50px;
+    width: 80%;
+  }
+  @media (min-width: var(--size-laptop)) {
+    width: 150px;
+  }
+
+  .svg {
+    fill: var(--color-dark-grey);
+  }
+}
+
+.iconsText {
+  @media (min-width: var(--size-laptop)) {
+    display: none;
+  }
+
+  font-family: var(--font-primary);
+  font-size: var(--mobile-body-small-size);
+  font-weight: var(--mobile-body-small-weight);
+  color: var(--color-black);
+}
+
+.line {
+  size: 2;
+  color: var(--color-black);
+  align-self: center;
+  width: 50px;
+  margin: 0;
+  margin-left: 25px;
+
+  @media (min-width: var(--size-laptop)) {
+    display: none;
+  }
+}
+
+.text {
+  user-select: none;
+  font-family: var(--font-primary);
+  font-size: var(--mobile-heading-2-size);
+  font-weight: var(--mobile-heading-2-weight);
+  color: var(--color-dark-grey);
+}
+
+span {
+  @media (max-width: var(--size-tablet)) {
+    color: var(--color-black);
+  }
+}
+
+.icon {
+  margin-left: 15px;
+}
+
+.path {
+  fill: var(--color-dark-grey);
+}
+
+.lnIcon {
+  margin-left: 15px;
+
+  @media (max-width: var(--size-tablet)) {
+    display: none;
+  }
+}

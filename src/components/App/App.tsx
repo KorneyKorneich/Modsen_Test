@@ -1,17 +1,7 @@
-import {Home} from "../../pages/Home/Home.tsx";
+import {RouterProvider} from "src/shared/providers/routerProvider/RouterProvider.tsx";
 
 function App() {
-    //todo: theme switcher
-  return (
-
-    <>
-        {/*<div className={styles.lightTheme}>*/}
-
-        {/*</div>*/}
-
-      <Home />
-    </>
-  )
+    return <RouterProvider />
 }
 
 export default App

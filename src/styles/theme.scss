@@ -1,0 +1,23 @@
+.app_light-theme{
+        --immutable_colors-black: #000000;
+        --immutable_colors-white: #FFFFFF;
+        --main_colours-accent: #A18A68;
+        --main_colours-white: #FFFFFF;
+        --main_colours-black: #000000;
+        --neutral_colours-dark_grey: #707070;
+        --neutral_colours-grey: #D8D8D8;
+        --neutral_colours-light_grey: #EFEFEF;
+        --service_colours-errors: #D82700;
+}
+.app_dark_theme{
+        --immutable_colors-black: #000000;
+        --immutable_colors-white: #FFFFFF;
+        --main_colours-accent: #A18A68;
+        --main_colours-white: #000000;
+        --main_colours-black: #FFFFFF;
+        --neutral_colours-grey: #D8D8D8;
+        --neutral_colours-dark_grey: #EFEFEF;
+        --neutral_colours-light_grey: #707070;
+        --service_colours-errors: #D82700;
+}
+

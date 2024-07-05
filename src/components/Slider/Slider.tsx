@@ -1,7 +1,12 @@
 import styles from './Slider.module.scss'
 import { useState } from 'react';
 
-export const Slider = ({images}) => {
+interface SliderProps {
+    images: string[]
+}
+
+export const Slider = (props: SliderProps) => {
+    const {images} = props
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const goToNext = () => {
